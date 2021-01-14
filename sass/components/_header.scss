@@ -67,7 +67,7 @@
     display: block;
     padding-top: 8px;
     padding-bottom: 8px;
-    font-size: 18px;
+    font-size: $product-text;
   }
 }
 
@@ -167,6 +167,15 @@
   border: none;
   background-color: transparent;
 
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -207,18 +216,16 @@
   background-color: $white-color;
 
   align-items: center;
-  font-size: 18px;
+  font-size: $product-text;
   width: 100%;
   z-index: 2;
 
   &.is-open {
-    display: block;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-      0px 1px 3px rgba(0, 0, 0, 0.16);
-  }
-
-  .menu-container.is-open {
-    display: block;
+    @media screen and (max-width: 767px) {
+      display: block;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -252,11 +259,11 @@
   color: $primary-text-color;
 
   @media screen and(max-width:1199px) {
-    font-size: 12px;
+    font-size: $modal-row-name;
   }
 
   @media screen and(max-width:767px) {
     line-height: 1.16;
-    font-size: 18px;
+    font-size: $product-text;
   }
 }
