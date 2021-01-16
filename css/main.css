@@ -557,6 +557,15 @@ h5 {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
 .header .nav-link,
 .contacts-header .link {
   transition-property: color;
@@ -650,6 +659,14 @@ h5 {
   .hero {
     padding-top: 200px;
     height: 600px;
+    background-size: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    position: relative;
+    top: 60px;
   }
 }
 
@@ -762,7 +779,7 @@ h5 {
 
 @media screen and (max-width: 767px) {
   .features-title {
-    align-items: center;
+    text-align: center;
   }
 }
 
@@ -1090,11 +1107,16 @@ h5 {
 .footer {
   display: flex;
   justify-content: center;
-  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   font-style: normal;
   background-color: #2f303a;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1174,6 +1196,12 @@ h5 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-title {
+    text-align: start;
+  }
+}
+
 .subscribe-list {
   display: flex;
   justify-content: center;
@@ -1239,6 +1267,12 @@ h5 {
 @media screen and (max-width: 1199px) {
   .appeal-title {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .appeal-title {
+    text-align: start;
   }
 }
 
@@ -1351,6 +1385,12 @@ h5 {
   .modal {
     width: 528px;
     height: 561px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
   }
 }
 
@@ -1600,6 +1640,13 @@ h5 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .projects {
+    position: relative;
+    top: 60px;
+  }
+}
+
 .projects-buttons {
   display: flex;
   justify-content: center;
@@ -1673,6 +1720,12 @@ h5 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-item:nth-child(1) .project-content {
+    height: 147px;
+  }
+}
+
 .project-img {
   width: 100%;
 }
@@ -1706,6 +1759,7 @@ h5 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: #212121;
 }
 

@@ -46,6 +46,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+    top: 60px;
+  }
 }
 
 .projects-buttons {
@@ -107,6 +112,11 @@
     margin-bottom: 30px;
   }
 }
+.project-item:nth-child(1) .project-content {
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    height: 147px;
+  }
+}
 
 .project-img {
   width: 100%;
@@ -140,6 +150,7 @@
   font-weight: $font-weight-bold;
   font-size: $project-title;
   line-height: 2;
+  letter-spacing: 0.06em;
 
   color: $title-text-color;
 }

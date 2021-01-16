@@ -1,13 +1,17 @@
 .footer {
   display: flex;
   justify-content: center;
-  text-align: center;
+
   padding-top: 60px;
   padding-bottom: 60px;
 
   font-style: normal;
 
   background-color: $background;
+
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .tablet-position {
@@ -92,6 +96,10 @@
   @media screen and(max-width: 767px) {
     margin-top: 60px;
   }
+
+  @media screen and(min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .subscribe-list {
@@ -163,6 +171,10 @@
 
   @media screen and(max-width: 1199px) {
     margin-top: 60px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    text-align: start;
   }
 }
 

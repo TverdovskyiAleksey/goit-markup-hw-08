@@ -196,6 +196,13 @@
 .header {
   border-bottom: 1px solid $border;
   position: relative;
+
+  @media screen and(max-width:767px) {
+    position: fixed;
+    background-color: $white-color;
+    width: 100%;
+    z-index: 2;
+  }
 }
 
 .header .nav-link,
