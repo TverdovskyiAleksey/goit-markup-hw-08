@@ -752,7 +752,7 @@ h5 {
 
 @media screen and (max-width: 767px) {
   .features {
-    padding-top: 120px;
+    margin-top: 60px;
   }
 }
 
