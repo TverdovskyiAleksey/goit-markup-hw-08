@@ -647,7 +647,6 @@ h5 {
   margin: 0 auto;
   padding-top: 118px;
   height: 400px;
-  min-width: 100%;
   background-image: url(../images/hero/hero-mobile.jpg);
   background-color: #2f303a;
   background-repeat: no-repeat;
@@ -659,7 +658,7 @@ h5 {
   .hero {
     padding-top: 200px;
     height: 600px;
-    background-size: auto;
+    max-width: 1600px;
   }
 }
 
@@ -748,6 +747,12 @@ h5 {
   .features {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features {
+    padding-top: 120px;
   }
 }
 
@@ -1717,12 +1722,6 @@ h5 {
 @media screen and (max-width: 768px) {
   .project-item:not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project-item:nth-child(1) .project-content {
-    height: 147px;
   }
 }
 
