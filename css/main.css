@@ -1706,8 +1706,6 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .project-item {
-    display: flex;
-    flex-wrap: wrap;
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
@@ -1738,6 +1736,12 @@ h5 {
 @media screen and (min-width: 768px) {
   .project-img {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-img {
+    width: 370px;
   }
 }
 
@@ -1810,6 +1814,12 @@ h5 {
 @media screen and (min-width: 768px) {
   .product-thumb {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-thumb {
+    width: 370px;
   }
 }
 
