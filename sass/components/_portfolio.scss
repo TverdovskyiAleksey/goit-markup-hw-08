@@ -50,6 +50,7 @@
   @media screen and (max-width: 767px) {
     position: relative;
     top: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -111,21 +112,21 @@
   }
 }
 
-.project-img {
-  width: 100%;
+// .project-img {
+//   width: 100%;
 
-  @media screen and(min-width:480px) {
-    width: 450px;
-  }
+//   @media screen and(min-width:480px) {
+//     width: 450px;
+//   }
 
-  @media screen and(min-width:768px) {
-    width: 354px;
-  }
+//   @media screen and(min-width:768px) {
+//     width: 354px;
+//   }
 
-  @media screen and(min-width:1200px) {
-    width: 370px;
-  }
-}
+//   @media screen and(min-width:1200px) {
+//     width: 370px;
+//   }
+// }
 
 .project-content {
   position: relative;

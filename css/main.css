@@ -1649,6 +1649,7 @@ h5 {
   .projects {
     position: relative;
     top: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1720,28 +1721,6 @@ h5 {
 @media screen and (max-width: 768px) {
   .project-item:not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-
-.project-img {
-  width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-  .project-img {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .project-img {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .project-img {
-    width: 370px;
   }
 }
 
